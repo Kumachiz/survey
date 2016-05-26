@@ -3,9 +3,9 @@ $(document).ready(function() {
     var InputName1 = $("input#InputName1").val();
     var InputName2 = $("input#InputName2").val();
     var InputBike = $("input#InputBike").val();
-    var optionsRadios1 = $("input#optionsRadios1").val();
-    var optionsRadios2 = $("input#optionsRadios2").val();
-    var optionsRadios3 = $("input#optionsRadios3").val();
+    var optionsRadios1 = $("input:radio[name=optionsRadios1]:checked").val();
+    var optionsRadios2 = $("input:radio[name=optionsRadios2]:checked").val();
+    var optionsRadios3 = $("input:radio[name=optionsRadios3]:checked").val();
     var Monday = $("input#Monday").val();
     var Tuesday = $("input#Tuesday").val();
     var Wednesday = $("input#Wednesday").val();
@@ -16,6 +16,7 @@ $(document).ready(function() {
     $(".InputName1").text(InputName1);
     $(".InputName2").text(InputName2);
     $(".InputBike").text(InputBike);
+    // $(".satisfaction").text(satisfaction)
     $(".optionsRadios1").text(optionsRadios1);
     $(".optionsRadios2").text(optionsRadios2);
     $(".optionsRadios3").text(optionsRadios3);
